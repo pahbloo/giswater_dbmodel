@@ -99,7 +99,7 @@ VALUES ('inp_options_max_flowchange', 'FLOWCHANGE', 'epaoptions', 'Max. flow cha
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO inp_typevalue VALUES ('inp_options_demand_model','DDA','DDA') ON CONFLICT (typevalue, id) DO NOTHING;
-INSERT INTO inp_typevalue VALUES ('inp_options_demand_model','PDA','DDA') ON CONFLICT (typevalue, id) DO NOTHING;;
+INSERT INTO inp_typevalue VALUES ('inp_options_demand_model','PDA','PDA') ON CONFLICT (typevalue, id) DO NOTHING;;
 
 UPDATE sys_param_user SET layoutorder = 12 WHERE id IN ('inp_options_quality_mode','inp_options_node_id');
 
